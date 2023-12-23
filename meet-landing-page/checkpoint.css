@@ -1,0 +1,50 @@
+.checkpoint-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkpoint-line {
+  background-color: var(--gray-transparent);
+  width: 1px;
+  height: 85px;
+}
+
+.checkpoint-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-transparent);
+  background: var(--white);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.checkpoint-num {
+  color: var(--gray);
+}
+
+.home-checkpoint {
+  margin: 115px 0 65px 0;
+}
+
+.about-checkpoint {
+  position: relative;
+  z-index: 3;
+  margin-top: 72px;
+  margin-bottom: -28px;
+}
+
+@media (max-width: 768px) {
+  .home-checkpoint {
+    margin: 80px 0 68px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-checkpoint {
+    margin: 64px 0;
+  }
+}

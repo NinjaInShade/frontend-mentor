@@ -1,0 +1,148 @@
+.pricing-card {
+  background: #fff;
+  box-shadow: 0 50px 50px -25px hsla(227, 35%, 45%, 0.25);
+  border-radius: 13px;
+  padding: 40px 48px;
+}
+
+.pricing-card.blue {
+  background: no-repeat url('../../assets/home/bg-pattern-pricing.svg') 50% 100% / 808px;
+  background-color: var(--primary);
+}
+
+.pricing-card,
+.pricing-card-top,
+.pricing-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-card-bottom {
+  margin-top: 56px;
+}
+
+.pricing-card-title,
+.pricing-card-subtitle,
+.pricing-card-lead {
+  color: var(--grey-dark);
+  text-align: center;
+}
+
+.pricing-card.blue .pricing-card-title,
+.pricing-card.blue .pricing-card-subtitle,
+.pricing-card.blue .pricing-card-lead {
+  color: #fff;
+}
+
+.pricing-card-title {
+  margin: 36px 0 8px 0;
+}
+
+.tablet-btn {
+  display: none;
+  margin-top: 24px;
+}
+
+.plan-feature:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.plan-feature {
+  text-align: center;
+  color: var(--grey);
+}
+
+.pricing-card.blue .plan-feature {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.desktop-btn {
+  margin-top: 32px;
+}
+
+@media (max-width: 1000px) {
+  .pricing-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 48px 68px 48px 48px;
+  }
+
+  .pricing-card.blue {
+    background: no-repeat url('../../assets/home/bg-pattern-pricing.svg') -275px 50% / 808px;
+    background-color: var(--primary);
+  }
+
+  .pricing-card-title {
+    margin: 12px 0 4px 0;
+  }
+
+  .tablet-btn {
+    display: block;
+  }
+
+  .pricing-card-title,
+  .pricing-card-subtitle,
+  .pricing-card-lead {
+    text-align: left;
+  }
+
+  .pricing-card-top {
+    align-items: flex-start;
+  }
+
+  .pricing-card-bottom {
+    margin: 0 0 0 20px;
+  }
+
+  .plan-feature {
+    text-align: left;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .pricing-card {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .pricing-card.blue {
+    background: no-repeat url('../../assets/home/bg-pattern-pricing.svg') 50% 80% / 808px;
+    background-color: var(--primary);
+  }
+
+  .pricing-card-title,
+  .pricing-card-subtitle,
+  .pricing-card-lead {
+    text-align: center;
+  }
+
+  .pricing-card-top {
+    align-items: center;
+  }
+
+  .tablet-btn {
+    display: none;
+  }
+
+  .pricing-card-title {
+    margin: 36px 0 8px 0;
+  }
+
+  .pricing-card-bottom {
+    margin-top: 56px;
+  }
+
+  .plan-feature {
+    text-align: center;
+  }
+
+  .display-btn {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--button);
+  letter-spacing: var(--button-letter-spacing);
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.btn-primary {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--red);
+  padding: 15px 32px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transition: all 0.2s ease-in-out;
+  background-color: var(--red-hover);
+}
+
+@media (max-width: 550px) {
+  .btn-primary {
+    padding: 12px 25px;
+  }
+}

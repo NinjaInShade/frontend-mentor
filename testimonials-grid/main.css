@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  max-width: var(--max-width);
+  column-gap: 30px;
+  row-gap: 24px;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 40px 60px 50px -48px rgba(72, 85, 106, 0.25);
+  padding: 26px 32px;
+  border-radius: 8px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-photo {
+  margin-right: 16px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+
+.card-name {
+  margin-bottom: 1px;
+  font-weight: 500;
+}
+
+.card-role {
+  font-weight: 500;
+}
+
+.card-title {
+  display: block;
+  font-weight: 600;
+  margin: 18px 0 16px 0;
+}
+
+.card-description {
+  font-weight: 500;
+}
+
+#white-card-1 .card-title,
+#white-card-2 .card-title,
+#black-card .card-title {
+  margin-bottom: 24px;
+}
+
+#purple-card .card-description {
+  color: rgba(207, 207, 207, 0.7);
+}
+
+#gray-card .card-description,
+#black-card .card-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#white-card-1 .card-description,
+#white-card-2 .card-description {
+  color: rgba(72, 85, 106, 0.7);
+}
+
+#purple-card {
+  background: no-repeat url('./assets/bg-pattern-quotation.svg') 80% 0;
+  background-color: var(--purple);
+  grid-column: span 2;
+}
+
+#purple-card .card-photo,
+#black-card .card-photo {
+  border: 2px solid var(--purple-light);
+}
+
+#gray-card {
+  background-color: var(--dark-gray);
+}
+
+#white-card-1 {
+  background-color: #fff;
+  grid-row: span 2;
+}
+
+#white-card-2 {
+  background-color: #fff;
+}
+
+#black-card {
+  background-color: var(--black);
+  grid-column: span 2;
+}
+
+@media (max-width: 950px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  #white-card-1 {
+    grid-row: span 1;
+  }
+
+  #purple-card,
+  #black-card {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 450px) {
+  #purple-card .card-title {
+    margin-bottom: 40px;
+  }
+
+  #gray-card .card-title,
+  #white-card-1 .card-title,
+  #white-card-2 .card-title,
+  #black-card .card-title {
+    margin-bottom: 16px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  #purple-card {
+    background: no-repeat url('./assets/bg-pattern-quotation.svg') calc(100% - 32px) 0;
+    background-color: var(--purple);
+  }
+}

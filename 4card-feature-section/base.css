@@ -1,0 +1,82 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+
+  /* Primary */
+  --red: #ea5454;
+  --cyan: #44d3d2;
+  --orange: #fcae4a;
+  --blue: #549ef2;
+
+  /* Neutral */
+  --black: #4d4f62;
+  --white: #fafafa;
+
+  /* Typography */
+  --h1: 36px;
+  --h1-line-height: 50px;
+  --h1-letter-spacing: 0.25px;
+
+  --h2: 20px;
+  --h2-font-weight: 600;
+
+  --body: 15px;
+  --body-line-height: 25px;
+  --body-letter-spacing: 0.1px;
+
+  --body-s: 13px;
+  --body-s-line-height: 23px;
+  --body-s-letter-spacing: 0.1px;
+
+  --container-max-width: 1100px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: 75px 30px;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: var(--h2-font-weight);
+}
+
+.body-text {
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+  opacity: 50%;
+}
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+  letter-spacing: var(--body-s-letter-spacing);
+  opacity: 50%;
+}
+
+@media (max-width: 375px) {
+  :root {
+    --h1: 24px;
+    --h1-line-height: 40px;
+    --h1-letter-spacing: 0.1r7px;
+  }
+}

@@ -1,0 +1,89 @@
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --blue: #4c7bf3;
+  --blue-hover: #8eabf7;
+
+  --pale-blue: #c2d3ff;
+  --dark-pale-blue: #b8c7ed;
+
+  --error: #ff5466;
+
+  /* Neutral */
+  --black: #15202a;
+  --gray: #969696;
+
+  /* Typography */
+  --h1: 3rem;
+  --h1-line-height: 60px;
+
+  --body: 1.25rem;
+
+  --body-s: 1rem;
+  --body-s-line-height: 20px;
+
+  --button: 1rem;
+
+  --small: 0.75rem;
+
+  --container-max-width: 640px;
+  --horizontal-padding: 48px;
+  --horizontal-s-padding: 28px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-line-height);
+}
+
+.body-text {
+  font-size: var(--body);
+}
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+}
+
+.small-text {
+  font-size: var(--small);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --h1: 1.375rem;
+    --h1-line-height: 32px;
+
+    --body: 0.75rem;
+
+    --body-s: 0.75rem;
+    --body-s-line-height: 16px;
+
+    --button: 0.75rem;
+
+    --small: 0.625rem;
+  }
+}

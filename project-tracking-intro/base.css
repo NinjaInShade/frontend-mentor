@@ -1,0 +1,96 @@
+* {
+  font-family: 'Barlow Condensed', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --red: #ff5e5e;
+  --red-hover: #ff8686;
+
+  /* Neutral */
+  --black: #242942;
+  --black-75: hsla(230, 29%, 20%, 0.75);
+  --black-50: hsla(230, 29%, 20%, 0.5);
+  --black-15: hsla(230, 29%, 20%, 0.15);
+
+  --background: #edf2f6;
+  --gray: #e7ecf1;
+
+  /* Typography */
+  --h1: 4rem;
+  --h1-line-height: 64px;
+
+  --body: 1.125rem;
+  --body-line-height: 26px;
+
+  --button: 1rem;
+  --button-letter-spacing: 1.07px;
+
+  --nav: 0.938rem;
+  --nav-letter-spacing: 1px;
+
+  --body-tight: 0.938rem;
+  --body-tight-letter-spacing: 1px;
+
+  --body-spaced: 0.938rem;
+  --body-spaced-letter-spacing: 5px;
+
+  /* Other */
+  --max-width: 1100px;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-line-height);
+}
+
+.body-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+}
+
+.body-spaced-text {
+  font-size: var(--body-spaced);
+  letter-spacing: var(--body-spaced-letter-spacing);
+}
+
+.body-tight-text {
+  font-size: var(--body-tight);
+  letter-spacing: var(--body-tight-letter-spacing);
+}
+
+.nav-text {
+  font-size: var(--nav);
+  letter-spacing: var(--nav-letter-spacing);
+}
+
+@media (max-width: 550px) {
+  :root {
+    --h1: 2.5rem;
+    --h1-line-height: 40px;
+
+    --button: 0.875rem;
+    --button-letter-spacing: 0.93px;
+
+    --nav: 1.125rem;
+    --nav-letter-spacing: 1.12px;
+
+    --body-spaced: 0.875rem;
+    --body-spaced-letter-spacing: 2.5px;
+  }
+}

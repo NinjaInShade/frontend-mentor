@@ -1,0 +1,184 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --green: #62e0d9;
+  --green-hover: #8adae3;
+
+  --gradient: linear-gradient(135deg, #63e1d9 0%, #34a0cd 100%);
+
+  --dark-blue: #07043b;
+
+  --light-blue: #202a3c;
+
+  --error-colour: #ff4242;
+
+  /* Neutral */
+  --dark-black: #0b1524;
+  --black: #1b2330;
+  --gray: #c0c0c0;
+
+  /* Typography */
+  --h1: 2.5rem;
+  --h1-line-height: 60px;
+
+  --h2: 2.5rem;
+  --h2-line-height: 50px;
+
+  --h3: 2rem;
+  --h3-line-height: 48px;
+
+  --body: 1.25rem;
+  --body-line-height: 30px;
+
+  --feature-text: 1.25rem;
+  --feature-line-height: 24px;
+
+  --navbar-text: 1rem;
+
+  --footer-body: 1rem;
+  --footer-body-line-height: 24px;
+
+  --anchor-text: 1rem;
+
+  --sub-form-text: 0.875rem;
+  --sub-form-text-line-height: 21px;
+
+  --body-s: 1rem;
+
+  --body-xs: 0.875rem;
+  --body-xs-line-height: 21px;
+
+  --testimonial-text: 0.875rem;
+  --testimonial-line-height: unset;
+
+  --input: 0.75rem;
+
+  --error: 0.625rem;
+
+  --small: 0.625rem;
+  --small-line-height: 12px;
+  --small-letter-spacing: 0.5px;
+
+  --tiny: 0.438rem;
+  --tiny-line-height: 10px;
+  --tiny-letter-spacing: 0.5px;
+
+  /* Other */
+}
+
+body {
+  background-color: var(--black);
+}
+
+main {
+  background: no-repeat url('./assets/bg-curvy-desktop.svg') top / cover;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-line-height);
+}
+
+h3 {
+  font-size: var(--h3);
+  line-height: var(--h3-line-height);
+}
+
+.body-text {
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+}
+
+.body-s-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--body-s);
+}
+
+.body-xs-text {
+  font-size: var(--body-xs);
+  line-height: var(--body-xs-line-height);
+}
+
+.small-text {
+  font-size: var(--small);
+  line-height: var(--small-line-height);
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.tiny-text {
+  font-size: var(--tiny);
+  line-height: var(--tiny-line-height);
+  letter-spacing: var(--tiny-letter-spacing);
+}
+
+.feature-text {
+  font-size: var(--feature-text);
+  line-height: var(--feature-line-height);
+}
+
+.input-text {
+  font-size: var(--input);
+}
+
+.error-text {
+  font-size: var(--error);
+}
+
+.footer-body-text {
+  font-size: var(--footer-body);
+  line-height: var(--footer-body-line-height);
+}
+
+.sub-form-text {
+  font-size: var(--sub-form-text);
+  line-height: var(--sub-form-text-line-height);
+}
+
+@media (max-width: 550px) {
+  :root {
+    --h1: 1.5rem;
+    --h1-line-height: 36px;
+
+    --h2: 1.125rem;
+    --h2-line-height: 24px;
+
+    --h3: 1.125rem;
+    --h3-line-height: 24px;
+
+    --body: 0.875rem;
+    --body-line-height: 21px;
+
+    --feature-text: 1.125rem;
+    --feature-line-height: 24px;
+
+    --anchor-text: 0.75rem;
+
+    --testimonial-text: 0.625rem;
+    --testimonial-line-height: 18px;
+
+    --body-s: 0.875rem;
+
+    --input: 0.625rem;
+  }
+
+  main {
+    background: no-repeat url('./assets/bg-curvy-mobile.svg') top / cover;
+  }
+}

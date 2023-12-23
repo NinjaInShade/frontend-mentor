@@ -1,0 +1,188 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --primary: #2f65f8;
+  --primary-hover: #6c9bff;
+
+  --secondary: #3da08f;
+  --secondary-hover: #71dfcc;
+
+  --light-purple: #575988;
+  --error-clr: #ef4877;
+
+  /* Neutral */
+  --black: #07043b;
+  --gray: #c2c2c2;
+
+  /* Typography */
+  --h1: 2.5rem;
+  --h1-lh: 60px;
+
+  --h2: 2.5rem;
+  --h2-lh: 47px;
+
+  --h3: 2rem;
+  --h3-lh: 48px;
+
+  --subheading: 1.063rem;
+  --subheading-lh: 24px;
+  --subheading-ls: 0.53px;
+
+  --body: 1rem;
+  --body-lh: 24px;
+
+  --contact: 1rem;
+  --contact-lh: 24px;
+
+  --error-txt: 0.75rem;
+  --error-txt-ls: 0.4px;
+
+  --testimonial: 0.813rem;
+  --testimonial-lh: 23px;
+  --testimonial-ls: 0;
+
+  --testimonial-name: 0.688rem;
+  --testimonial-name-ls: 0.55px;
+
+  --testimonial-role: 0.5rem;
+  --testimonial-role-lh: 15px;
+  --testimonial-role-ls: 0;
+
+  --nav: 1rem;
+  --input: 0.875rem;
+  --input-s: 0.75rem;
+  --btn: 0.875rem;
+  --btn-s: 0.875rem;
+  --anchor: 1rem;
+  --footer-anchor: 1rem;
+
+  /* Other */
+  --container: 1280px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container);
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-lh);
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-lh);
+}
+
+h3 {
+  font-size: var(--h3);
+  line-height: var(--h3-lh);
+}
+
+.subheading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--subheading);
+  line-height: var(--subheading-lh);
+  letter-spacing: var(--subheading-ls);
+}
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--body);
+  line-height: var(--body-lh);
+}
+
+.contact {
+  font-size: var(--contact);
+  line-height: var(--contact-lh);
+}
+
+.error {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--error-txt);
+  letter-spacing: var(--error-txt-ls);
+}
+
+.testimonial {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--testimonial);
+  line-height: var(--testimonial-lh);
+  letter-spacing: var(--testimonial-ls);
+}
+
+.testimonial-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--testimonial-name);
+  letter-spacing: var(--testimonial-name-ls);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.testimonial-role {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--testimonial-role);
+  line-height: var(--testimonial-role-lh);
+  letter-spacing: var(--testimonial-role-ls);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  :root {
+    /* Typography */
+    --h1: 1.5rem;
+    --h1-lh: 36px;
+
+    --h2: 1rem;
+    --h2-lh: 24px;
+
+    --h3: 1.125rem;
+    --h3-lh: 24px;
+
+    --subheading: 0.875rem;
+    --subheading-lh: 21px;
+    --subheading-ls: 0;
+
+    --body: 0.875rem;
+    --body-lh: 21px;
+
+    --testimonial: 0.625rem;
+    --testimonial-lh: 18px;
+    --testimonial-ls: 0.38px;
+
+    --testimonial-name: 0.563rem;
+    --testimonial-name-ls: 0.45px;
+
+    --testimonial-role: 0.375rem;
+    --testimonial-role-lh: 12px;
+    --testimonial-role-ls: 0.3px;
+
+    --nav: 0.75rem;
+    --input: 0.75rem;
+    --input-s: 0.625rem;
+    --btn-s: 0.625rem;
+    --anchor: 0.75rem;
+  }
+}

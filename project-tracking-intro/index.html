@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project tracking intro page" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
+    <title>Project tracking intro page</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="overall-container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="navbar-container" id="navbar-container">
+          <a href="./index.html" class="navbar-logo-container"
+            ><img src="./assets/logo.svg" alt="Business logo" class="navbar-logo"
+          /></a>
+
+          <ul class="navbar-links">
+            <li class="navbar-link"><a href="./index.html" class="nav-text">Product</a></li>
+            <li class="navbar-link"><a href="./index.html" class="nav-text">Features</a></li>
+            <li class="navbar-link"><a href="./index.html" class="nav-text">Pricing</a></li>
+            <div class="navbar-mobile-seperator"></div>
+            <li class="navbar-link" id="login-link"><a href="./index.html" class="nav-text">Login</a></li>
+          </ul>
+
+          <button class="navbar-hamburger" onclick="toggleMobileNav()">
+            <img src="./assets/icon-hamburger.svg" alt="Hamburger open icon" id="open-icon" />
+            <img
+              src="./assets/icon-close.svg"
+              alt="Hamburger close icon"
+              class="navbar-hamurger-icon-hidden"
+              id="close-icon"
+            />
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main>
+        <header class="header">
+          <div class="header-container">
+            <section>
+              <div class="header-flex">
+                <div class="body-tight-text header-tag">New</div>
+                <p class="body-spaced-text header-lead">Monograph dashboard</p>
+              </div>
+              <h1 class="header-title">
+                Powerful insights<br />
+                into your team
+              </h1>
+              <p class="body-text header-subtitle">
+                Project planning and time tracking<br />
+                for agile teams
+              </p>
+              <div class="header-flex">
+                <a href="./index.html" class="btn btn-primary">Schedule a demo</a>
+                <p class="body-spaced-text header-btn-description">To see a preview</p>
+              </div>
+            </section>
+            <img
+              src="./assets/illustration-devices.svg"
+              alt="Mobile and Desktop device template mockups, indicating some placeholder content and shows how the app is layed out."
+              class="header-img"
+            />
+          </div>
+        </header>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

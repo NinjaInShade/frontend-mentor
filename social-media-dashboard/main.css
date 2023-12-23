@@ -1,0 +1,141 @@
+.header {
+  background-color: var(--top-bg);
+  padding: 36px 24px 154px 24px;
+  border-radius: 0 0 20px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  color: var(--txt-high-contrast);
+}
+
+.header-subtitle {
+  color: var(--txt-mid-contrast);
+  margin-top: 4px;
+}
+
+.theme-switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-switch-text {
+  color: var(--txt-theme-switch);
+  margin-right: 13px;
+}
+
+.theme-switch-text-hover {
+  color: var(--txt-theme-switch-hover);
+}
+
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background: var(--theme-switch-track);
+  text-indent: -9999px;
+  border-radius: 12px;
+  height: 24px;
+  width: 48px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  background: var(--theme-switch-thumb);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+}
+
+input:checked + label {
+  background: var(--theme-switch-track);
+}
+
+input:checked + label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+
+label:hover,
+input:checked + label:hover {
+  background: var(--theme-switch-track-hover);
+}
+
+input:hover + label:after,
+input:active + label:after {
+  background: var(--theme-switch-thumb-hover);
+}
+
+.main {
+  padding: 0 24px 75px 24px;
+  margin-top: -108px;
+}
+
+.main-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  margin-bottom: 46px;
+  column-gap: 30px;
+  row-gap: 24px;
+}
+
+.small-stats-heading {
+  color: var(--txt-overview-today);
+  margin-bottom: 24px;
+}
+
+.small-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  margin-bottom: 46px;
+  column-gap: 30px;
+  row-gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-bottom: 84px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-switch-container {
+    justify-content: space-between;
+    border-top: 1px solid var(--header-border);
+    padding-top: 16px;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .main {
+    padding-bottom: 45px;
+    margin-top: -44px;
+  }
+
+  .small-stats-heading {
+    margin-bottom: 27px;
+  }
+
+  .small-stats-container {
+    row-gap: 16px;
+  }
+}

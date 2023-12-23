@@ -1,0 +1,64 @@
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* Neutral */
+  --black: #202047;
+  --gray: #b9b9ce;
+
+  /* Typography */
+  --body: 2rem;
+  --body-line-height: 44px;
+
+  --body-s: 1.25rem;
+  --body-s-line-height: 38px;
+
+  /* Other */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url('./assets/pattern-curve.svg') bottom left;
+  min-height: 100vh;
+}
+
+.body-text {
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+}
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+}
+
+@media (max-width: 500px) {
+  :root {
+    --body: 1.125rem;
+    --body-line-height: 24px;
+
+    --body-s: 0.938rem;
+    --body-line-height-s: 20px;
+  }
+
+  body {
+    background: no-repeat url('./assets/pattern-curve.svg') bottom left / 75% 10%;
+    min-height: 0;
+  }
+}

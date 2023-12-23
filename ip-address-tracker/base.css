@@ -1,0 +1,79 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Neutral */
+  --black: hsl(0, 0%, 17%);
+  --black-50: hsla(0, 0%, 17%, 0.5);
+
+  --grey: #3f3f3f;
+  --grey-light: #969696;
+
+  /* Typography */
+  --h1: 2rem;
+  --h1-lh: 30px;
+  --h1-ls: -0.3px;
+
+  --h2: 0.75rem;
+  --h2-ls: 1.75px;
+
+  --body: 1.625rem;
+  --body-lh: 30px;
+  --body-ls: -0.23px;
+
+  --input: 1.125rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: var(--h1);
+  line-height: var(--h1-lh);
+  letter-spacing: var(--h1-ls);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: var(--h2);
+  letter-spacing: var(--h2-ls);
+}
+
+.body {
+  font-weight: 500;
+  font-size: var(--body);
+  line-height: var(--body-lh);
+  letter-spacing: var(--body-ls);
+}
+
+.input {
+  font-size: var(--input);
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 850px) {
+  :root {
+    --h1: 1.625rem;
+    --h1-lh: 30px;
+    --h1-ls: -0.23px;
+
+    --h2: 0.625rem;
+    --h2-ls: 1.45px;
+
+    --body: 1.25rem;
+    --body-lh: 24px;
+    --body-ls: -0.18px;
+  }
+}

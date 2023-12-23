@@ -1,0 +1,45 @@
+/* Base button class and styles */
+
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: var(--button);
+  line-height: var(--button-line-height);
+  font-weight: var(--button-font-weight);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+}
+
+.btn span {
+  margin-left: 2px;
+}
+
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button specific styles */
+
+.btn-primary {
+  background: var(--primary);
+}
+
+.btn-primary span {
+  color: var(--primary-light);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.btn-secondary span {
+  color: var(--secondary-light);
+}

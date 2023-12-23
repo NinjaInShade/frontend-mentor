@@ -1,0 +1,32 @@
+.form {
+  background: #fff;
+  box-shadow: 0 50px 50px -25px hsla(227, 35%, 45%, 0.25);
+  padding: 40px 42px 50px 42px;
+  margin-right: -255px;
+  border-radius: 13px;
+  max-width: 448px;
+  width: 100%;
+  z-index: 2;
+}
+
+.form-input:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form .btn {
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1225px) {
+  .form {
+    margin: 100px 0 -254px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .form {
+    padding: 24px;
+    margin: 64px 0 -340px 0;
+  }
+}

@@ -1,0 +1,43 @@
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+  padding: 16px 26px;
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.btn:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--orange-light);
+}
+
+.btn-secondary {
+  background-color: var(--gray-light);
+  color: var(--black);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--black);
+  color: #fff;
+}
+
+@media (max-width: 375px) {
+  .btn {
+    padding: 11px 14px;
+  }
+}

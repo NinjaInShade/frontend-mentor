@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Social media dashboard with dark/light theme switcher" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="big-card.css" />
+    <link rel="stylesheet" href="small-card.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,700" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
+    <title>Social media dashboard</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="header">
+      <div class="container header-container">
+        <div>
+          <h1 class="header-title">Social Media Dashboard</h1>
+          <h2 class="header-subtitle">Total Followers: 23,004</h2>
+        </div>
+        <div class="theme-switch-container">
+          <b class="body theme-switch-text" id="theme-switch-txt">Dark Mode</b>
+          <input type="checkbox" id="theme-switch" /><label for="theme-switch" id="theme-switch-btn">Toggle</label>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-stats-container container">
+        <!-- Facebook -->
+        <article class="big-card" id="facebook-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-facebook.svg" alt="Facebook logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">1987</strong>
+            <h2 class="spaced big-card-subtitle">Followers</h2>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">12 Today</p>
+          </div>
+        </article>
+
+        <!-- Twitter -->
+        <article class="big-card" id="twitter-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-twitter.svg" alt="Twitter logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuyUK</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">1044</strong>
+            <h2 class="spaced big-card-subtitle">Followers</h2>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">99 Today</p>
+          </div>
+        </article>
+
+        <!-- Instagram -->
+        <article class="big-card" id="instagram-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-instagram.svg" alt="Instagram logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">11k</strong>
+            <h2 class="spaced big-card-subtitle">Followers</h2>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+            <p class="body-s success big-card-difference">1099 Today</p>
+          </div>
+        </article>
+
+        <!-- Youtube -->
+        <article class="big-card" id="youtube-card">
+          <div class="big-card-flex">
+            <img src="./assets/icon-youtube.svg" alt="Youtube logo icon" />
+            <p class="body-s big-card-handle">@TheFrontendGuy</p>
+          </div>
+          <div class="big-card-stats">
+            <strong class="strong big-card-title">8239</strong>
+            <h2 class="spaced big-card-subtitle">Subscribers</h2>
+          </div>
+          <div class="big-card-flex">
+            <img src="./assets/icon-down.svg" alt="Down icon indiciating decrease" />
+            <p class="body-s error big-card-difference">144 Today</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="container">
+        <h3 class="small-stats-heading">Overview - Today</h3>
+        <div class="small-stats-container">
+          <!-- Facebook page views -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Page Views</h2>
+              <img src="./assets/icon-facebook.svg" alt="Facebook logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">87</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+                <p class="body-s success small-card-difference">3%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Facebook likes -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Likes</h2>
+              <img src="./assets/icon-facebook.svg" alt="Facebook logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">52</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-down.svg" alt="Down icon indiciating decrease" />
+                <p class="body-s error small-card-difference">2%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Instagram likes -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Likes</h2>
+              <img src="./assets/icon-instagram.svg" alt="Instagram logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">5462</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+                <p class="body-s success small-card-difference">2257%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Instagram profile views -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Profile Views</h2>
+              <img src="./assets/icon-instagram.svg" alt="Instagram logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">52k</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+                <p class="body-s success small-card-difference">1375%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Twitter retweets -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Retweets</h2>
+              <img src="./assets/icon-twitter.svg" alt="Twitter logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">117</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+                <p class="body-s success small-card-difference">303%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Twitter likes -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Likes</h2>
+              <img src="./assets/icon-twitter.svg" alt="Twitter logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">507</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-up.svg" alt="Up icon indiciating increase" />
+                <p class="body-s success small-card-difference">553%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Youtube likes -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Likes</h2>
+              <img src="./assets/icon-youtube.svg" alt="Youtube logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">107</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-down.svg" alt="Down icon indiciating decrease" />
+                <p class="body-s error small-card-difference">19%</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Youtube total views -->
+          <article class="small-card">
+            <div class="small-card-flex small-card-top">
+              <h2 class="body small-card-description">Total Views</h2>
+              <img src="./assets/icon-youtube.svg" alt="Youtube logo icon" />
+            </div>
+            <div class="small-card-flex">
+              <strong class="strong-s small-card-stat">1407</strong>
+              <div class="small-card-difference-container">
+                <img src="./assets/icon-down.svg" alt="Down icon indiciating decrease" />
+                <p class="body-s error small-card-difference">12%</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

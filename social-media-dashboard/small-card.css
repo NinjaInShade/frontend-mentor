@@ -1,0 +1,40 @@
+.small-card {
+  background: var(--card-bg);
+  border-radius: 5px;
+  padding: 26px 24px;
+}
+
+.small-card:hover {
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
+}
+
+.small-card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-card-top {
+  margin-bottom: 21px;
+}
+
+.small-card-description {
+  color: var(--txt-mid-contrast);
+}
+
+.small-card-stat {
+  color: var(--txt-high-contrast);
+}
+
+.small-card-difference-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin: 0 0 2px 0;
+}
+
+.small-card-difference {
+  margin-left: 2px;
+}

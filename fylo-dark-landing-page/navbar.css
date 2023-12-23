@@ -1,0 +1,49 @@
+.navbar {
+  padding: 75px 20px 0 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.navbar-logo {
+  display: block;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-link:not(:last-child) {
+  margin-right: 56px;
+}
+
+.navbar-link a {
+  color: #fff;
+  font-size: var(--anchor-text);
+}
+
+.navbar-link a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    padding-top: 24px;
+  }
+
+  .navbar-logo {
+    max-width: 80px;
+  }
+
+  .navbar-link:not(:last-child) {
+    margin-right: 24px;
+  }
+}

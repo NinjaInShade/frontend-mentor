@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Fylo 2col landing page" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:regular,700,italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
+    <title>Fylo 2col landing page</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="./index.html"> <img src="./assets/logo.svg" alt="Fylo logo" class="navbar-logo" /></a>
+        <ul class="navbar-links">
+          <li class="navbar-link"><a href="./index.html">Features</a></li>
+          <li class="navbar-link"><a href="./index.html">Team</a></li>
+          <li class="navbar-link"><a href="./index.html">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header class="header">
+        <div class="container header-container">
+          <section class="header-main">
+            <h1 class="header-title">All your files in one secure location, accessible anywhere.</h1>
+            <p class="subheading header-subheading">
+              Fylo stores your most important files in one secure location. Access them wherever you need, share and
+              collaborate with friends, family, and co-workers.
+            </p>
+            <form class="header-form" onsubmit="submitHeaderForm(event)">
+              <div class="header-form-input-group" id="header-form">
+                <input type="text" placeholder="Enter your email..." class="header-form-input" name="Email" />
+                <p class="error hidden header-form-error">Form is valid</p>
+              </div>
+              <button class="btn btn-primary" type="submit" id="header-btn">Get Started</button>
+            </form>
+          </section>
+          <img
+            src="./assets/illustration-1.svg"
+            alt="Illustration of two people grabbings documents out of a secure looking folder."
+            class="header-img"
+          />
+        </div>
+      </header>
+      <section class="objections">
+        <div class="objections-container container">
+          <div>
+            <h2 class="objections-title">Stay productive, wherever you are</h2>
+            <p class="body objections-description">
+              Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+              storage needs.
+            </p>
+            <p class="body objections-description">
+              Securely share files and folders with friends, family and colleagues for live collaboration. No email
+              attachments required!
+            </p>
+            <a href="./index.html" class="info-link"
+              >See how Fylo works<svg
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="info-link-icon"
+              >
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                    <feColorMatrix
+                      values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                      in="shadowBlurOuter1"
+                    />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#fff" filter="url(#a)" xlink:href="#b" />
+                    <use fill="#3DA08F" xlink:href="#b" class="info-link-icon-fill" />
+                  </g>
+                  <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#fff" />
+                </g>
+              </svg>
+            </a>
+            <section class="testimonial-card">
+              <img src="./assets/icon-quotes.svg" class="testimonial-quote" alt="Decorative quote" aria-hidden="true" />
+              <p class="testimonial testimonial-description">
+                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+                become a well-oiled collaboration machine.
+              </p>
+              <div class="testimonial-profile">
+                <img
+                  src="./assets/avatar-testimonial.jpg"
+                  alt="Photo of Kyle Burton looking happy at the camera"
+                  class="testimonial-photo"
+                />
+                <div>
+                  <b class="testimonial-name">Kyle Burton</b>
+                  <p class="testimonial-role">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <img
+            src="./assets/illustration-2.svg"
+            alt="Illustration of three people holding up documents, looking productive."
+            class="objections-img"
+          />
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container subscribe-container">
+          <div>
+            <h3 class="subscribe-title">Get early access today</h3>
+            <p class="body subscribe-description">
+              It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+              questions, our support team would be happy to help you.
+            </p>
+          </div>
+          <form class="subscribe-form" onsubmit="submitSubscribeForm(event)">
+            <div class="subscribe-form-input-group" id="subscribe-form">
+              <input type="text" placeholder="email@example.com" class="subscribe-form-input" name="Email" />
+              <p class="error hidden subscribe-form-error">Form is valid</p>
+            </div>
+            <button class="btn btn-primary btn-small" type="submit" id="subscribe-btn">Get Started</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="./assets/logo-white.svg" class="footer-logo" alt="Fylo logo" />
+        <section class="footer-main">
+          <ul class="footer-contacts">
+            <li>
+              <address class="body-xs-text footer-contact">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" aria-label="phone">
+                  <path
+                    d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
+                    fill="#FFF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <a href="./index.html" class="body">+1-543-123-4567</a>
+              </address>
+            </li>
+            <li>
+              <address class="body-xs-text footer-contact">
+                <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg" aria-label="email">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M-2-4h24v24H-2z" />
+                    <path
+                      d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+                      fill="#FFF"
+                    />
+                  </g>
+                </svg>
+                <a href="./index.html" class="body">example@fylo.com</a>
+              </address>
+            </li>
+          </ul>
+
+          <div class="footer-links">
+            <ul>
+              <li class="footer-link"><a href="./index.html">About Us</a></li>
+              <li class="footer-link"><a href="./index.html">Jobs</a></li>
+              <li class="footer-link"><a href="./index.html">Press</a></li>
+              <li class="footer-link"><a href="./index.html">Blog</a></li>
+            </ul>
+            <ul>
+              <li class="footer-link"><a href="./index.html">Contact us</a></li>
+              <li class="footer-link"><a href="./index.html">Terms</a></li>
+              <li class="footer-link"><a href="./index.html">Privacy</a></li>
+            </ul>
+          </div>
+
+          <ul class="footer-socials">
+            <li class="footer-social">
+              <a href="./index.html" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social">
+              <a href="./index.html" aria-label="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-twitter"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social">
+              <a href="./index.html" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

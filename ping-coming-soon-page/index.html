@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ping coming soon page" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/2c0d7e85ca.js" crossorigin="anonymous"></script>
+    <title>Ping coming soon page</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <main>
+      <!----- Navigation ----->
+      <nav class="navbar">
+        <div class="container">
+          <a href="./index.html">
+            <img src="./assets/logo.svg" class="navbar-logo" alt="Ping company logo" />
+          </a>
+        </div>
+      </nav>
+
+      <!----- Header ----->
+      <header class="header">
+        <div class="container">
+          <h1 class="header-title">We are launching <span>soon!</span></h1>
+          <p class="body-text header-description">Subscribe and get notified</p>
+          <form class="header-form" id="subscribe-form" onsubmit="validateForm(event)">
+            <input type="text" placeholder="Your email address..." class="body-s-text header-input" name="email" />
+            <p class="small-text header-error-text" id="email-error">Form is valid</p>
+            <button class="btn btn-primary" type="submit">Notify Me</button>
+          </form>
+        </div>
+      </header>
+
+      <!----- Image ----->
+      <section class="header-img-section">
+        <div class="container">
+          <img
+            src="./assets/illustration-dashboard.png"
+            class="header-img"
+            alt="Template dashboard mockup giving a teaser to what PING's UI looks like"
+          />
+        </div>
+      </section>
+
+      <!----- Footer ----->
+      <footer class="footer">
+        <div class="container">
+          <ul class="social-links-list">
+            <li class="social-links-list-item">
+              <a href="./index.html" class="social-link" aria-labelledby="Facebook social link">
+                <span class="fab fa-facebook-f social-icon" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a href="./index.html" class="social-link" aria-labelledby="Twitter social link">
+                <span class="fab fa-twitter social-icon" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a href="./index.html" class="social-link" aria-labelledby="Instagram social link">
+                <span class="fab fa-instagram social-icon" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+
+          <small class="small footer-copyright">© Copyright Ping. All rights reserved.</small>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

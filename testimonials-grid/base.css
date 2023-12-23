@@ -1,0 +1,75 @@
+* {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --purple: #733fc8;
+  --purple-light: #a775f1;
+
+  /* Neutral */
+  --black: #19202d;
+  --dark-gray: #48556a;
+
+  --gray: #cfcfcf;
+  --white: #ecf2f8;
+
+  /* Typography */
+  --strong: 1.25rem;
+
+  --body: 0.813rem;
+  --body-line-height: 18px;
+
+  --body-s: 0.688rem;
+  --body-s-line-height: 11px;
+
+  /* Other */
+  --max-width: 1100px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 75px 24px;
+  min-height: 100vh;
+}
+
+.strong-text {
+  font-size: var(--strong);
+}
+
+.body-text {
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+}
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.color-gray {
+  color: var(--dark-gray);
+}
+
+.color-gray-50 {
+  color: rgba(72, 85, 106, 0.5);
+}

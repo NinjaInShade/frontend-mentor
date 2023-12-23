@@ -1,0 +1,76 @@
+.big-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 32px 24px 24px 24px;
+  border-radius: 5px;
+}
+
+.big-card:hover {
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
+}
+
+.big-card::after {
+  position: absolute;
+  content: '';
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+
+#facebook-card::after {
+  background: var(--facebook);
+}
+
+#twitter-card::after {
+  background: var(--twitter);
+}
+
+#instagram-card::after {
+  background: var(--instagram);
+}
+
+#youtube-card::after {
+  background: var(--youtube);
+}
+
+.big-card-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-card-stats {
+  margin: 28px 0 25px 0;
+}
+
+.big-card-title,
+.big-card-subtitle {
+  text-align: center;
+}
+
+.big-card-title {
+  display: block;
+  color: var(--txt-high-contrast);
+  margin-bottom: 9px;
+}
+
+.big-card-subtitle {
+  text-transform: uppercase;
+  color: var(--txt-mid-contrast);
+}
+
+.big-card-difference {
+  margin-left: 4px;
+}
+
+.big-card-handle {
+  color: var(--txt-mid-contrast);
+  margin-left: 8px;
+}
